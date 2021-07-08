@@ -15,8 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $comics = config('comics');
+    $buy_icons = config('buy_icons');
     $data = [
         'comics' => $comics,
+        
         'nav_links' => [
             'characters',
             'comics',
@@ -28,7 +30,8 @@ Route::get('/', function () {
             'fans',
             'news',
             'shop'
-        ]
+        ],
+        'buy_icons' => $buy_icons
     ]; 
 
     //dd($comics);

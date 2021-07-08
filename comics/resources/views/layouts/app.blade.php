@@ -43,7 +43,9 @@
                     @endforeach
                 </div>
                 <!-- Search -->
-                <div id="search">Search <i class="fas fa-search"></i>
+                <div id="search" class="text-right">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <div class="fas fa-search"></i>
                 </div>
             </nav>
             <!-- /Nav -->
@@ -59,7 +61,17 @@
 
         <!-- Site Footer -->
         <footer>
+            <div class="buy text-center py-5">
+                <ul>
+                    @foreach ($buy_icons as $buy_icon)
+                    <li class="px-4">
+                        <img height="{{$loop->last ? 35 : 50}}" src="{{asset($buy_icon['picture'])}}" alt="" class="pr-2">
+                        {{$buy_icon['text']}}
+                    </li>
+                    @endforeach
+                </ul>
 
+            </div>
         </footer>
         <!-- /Site Footer -->
 

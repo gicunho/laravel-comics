@@ -10,14 +10,14 @@ main {
     }
     .comics {
         background-color: $brand_black;
-        padding: 100px 0;
+        padding: 50px 0 20px 0;
         .page_title {
             background-color: $brand_blue;
             height: 60px;
             padding: 10px 30px;
             margin-block-end: 0;
             position: absolute;
-            top: -130px;
+            top: -80px;
             text-transform: uppercase;
             color: white;
             font-size: 30px;
@@ -36,6 +36,14 @@ main {
             }
             h5 {
                 padding-top: 10px;
+            }
+        }
+        .load_more {
+            a {
+                color: white;
+                text-transform: uppercase;
+                padding: 10px 40px;
+                background-color: $brand_blue;
             }
         }
     }

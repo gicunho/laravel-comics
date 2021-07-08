@@ -17,6 +17,9 @@
             </div>       
             @endforeach
         </div>
+        <div class="load_more text-center">
+            <a href="#">load more</a>
+        </div>
     </div>
 
 @endsection
