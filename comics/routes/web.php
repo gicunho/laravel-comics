@@ -16,7 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $comics = config('comics');
     $data = [
-        'comics' => $comics
+        'comics' => $comics,
+        'nav_links' => [
+            'characters',
+            'comics',
+            'movies',
+            'tv',
+            'games',
+            'collectibles',
+            'videos',
+            'fans',
+            'news',
+            'shop'
+        ]
     ]; 
 
     //dd($comics);
