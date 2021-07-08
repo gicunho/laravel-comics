@@ -10973,3 +10973,55 @@ header nav #links a {
   padding: 0 20px;
 }
 
+main .jumbo {
+  height: 500px;
+}
+
+main .jumbo img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main .comics {
+  background-color: #1c1c1c;
+  padding: 100px 0;
+}
+
+main .comics .page_title {
+  background-color: #0282f9;
+  height: 60px;
+  padding: 10px 30px;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  position: absolute;
+  top: -130px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+main .comics .comic {
+  width: 200px;
+  height: 300px;
+  padding: 20px 0;
+  color: white;
+}
+
+main .comics .comic img {
+  height: 200px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+main .comics .comic h5 {
+  padding-top: 10px;
+}
+
