@@ -39,7 +39,7 @@
                 <!-- Links -->
                 <div id="links">
                     @foreach ($nav_links as $link)
-                    <a href="">{{$link}}</a>
+                    <a href="{{route($link['href'])}}">{{$link['name']}}</a>
                     @endforeach
                 </div>
                 <!-- Search -->
@@ -63,12 +63,12 @@
         <footer>
             <div class="buy text-center py-5">
                 <ul>
-                    @foreach ($buy_icons as $buy_icon)
+                  {{--   @foreach ($buy_icons as $buy_icon)
                     <li class="px-4">
                         <img height="{{$loop->last ? 35 : 50}}" src="{{asset($buy_icon['picture'])}}" alt="" class="pr-2">
                         {{$buy_icon['text']}}
                     </li>
-                    @endforeach
+                    @endforeach --}}
                 </ul>
 
             </div>
